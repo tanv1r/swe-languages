@@ -20,6 +20,6 @@ for i in range(10):
 	ten_sided_die.roll_die();
 
 twenty_sided_die = Die(20)
-print('Rolling ten-sided die 10 times')
+print('Rolling twenty-sided die 10 times')
 for i in range(10):
 	twenty_sided_die.roll_die();
