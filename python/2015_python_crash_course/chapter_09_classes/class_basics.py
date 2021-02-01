@@ -24,31 +24,30 @@
 # my_dog.sit()
 # my_dog.roll_over()
 
-class Car():
-	"""A simple attempt to represent a car."""
-	
-	def __init__(self, make, model, year):
-		self.make = make
-		self.model = model
-		self.year = year
-		self.odometer_reading = 0
-		
-	def get_descriptive_name(self):
-		long_name = str(self.year) + ' ' + self.make + ' ' + self.model
-		return long_name.title()
-		
-	def read_odometer(self):
-		print("This car has " + str(self.odometer_reading) + " miles on it.")
-		
-	def update_odometer(self, mileage):
-		if mileage >= self.odometer_reading:
-			self.odometer_reading = mileage
-		else:
-			print("You cannot roll back an odometer.")
-	
-	def increment_odometer(self, miles):
-		self.odometer
+from car import Car		
+from battery import Battery
 
+# Note, on line 53, we are passing in the parent class as a parameter to the child class
+class ElectricCar(Car):
+	"""Represent aspects of a car, speicific to electric vehicles."""
+	
+	def __init__(self, make, model, year, battery=Battery()):
+		"""Initialize attributes of the parent class."""
+		super().__init__(make, model, year)
+		#self.battery_size = 70
+		#self.battery = Battery()
+		self.battery = battery
+		
+	def fill_gas_tank(self):
+		"""Electric cars do not have gas tanks."""
+		print("This car does not need a gas tank!")
+
+my_tesla = ElectricCar('tesla', 'model s', 2021, Battery(85))
+print( my_tesla.get_descriptive_name() )
+#print( my_tesla.battery_size )
+my_tesla.fill_gas_tank()
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
 
 
 
