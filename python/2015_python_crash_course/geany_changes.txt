@@ -1,0 +1,9 @@
+0. Underscore was invisible:
+	a. In the Geany editor: Tools -> Configuration Files -> filetypes.common [-> Append below section]
+										[styling]
+										line_height=0;1;
+1. Change the color theme:
+	a. Download ubuntu.conf from https://www.geany.org/download/themes/ to /home/motanv/.config/geany/colorschemes
+	b. In the Geany editor: View -> Change Color Scheme [-> Choose Ubuntu]
+2. Change font:
+	a. In the Geany editor: Edit -> Preferences -> Interface -> Fonts [-> Code New Roman Regular, 12]
