@@ -15,7 +15,8 @@
 # 
 # Naming:
 # 
-# 01. Functions, variables, and attributes should in lowercase_underscore      #     format.
+# 01. Functions, variables, and attributes should in lowercase_underscore 
+#     format.
 # 02. Protected instance attributes should in _leading_underscore format.
 # 03. Private instance attributes should be __double_underscore format.
 # 04. Classes and exceptions should in CapitalizedWord format.
