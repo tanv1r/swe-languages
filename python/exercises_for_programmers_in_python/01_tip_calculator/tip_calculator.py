@@ -7,6 +7,9 @@ while True:
         break
     try:
         bill = float(bill_string)
+        if bill <= 0:
+            print("Please enter a positive value for the bill.")
+            continue
     except ValueError:
         print("Please enter only the dollar amount of the bill.")
     else:
@@ -16,6 +19,9 @@ while True:
 
         try:
             percentage = float(percentage_string)
+            if percentage < 0:
+                print("Please enter a non-negative value for the tip percentage")
+                continue
         except ValueError:
             print("Please enter the percentage amount as a number.")
         else:
