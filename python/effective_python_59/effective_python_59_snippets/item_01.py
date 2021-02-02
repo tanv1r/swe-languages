@@ -6,7 +6,7 @@ import sys
 print(sys.version_info)
 print(sys.version)
 
-# Output from my vscode in ubuntu
+# Output from my vscode on ubuntu
 #
 # sys.version_info(major=3, minor=8, micro=5, releaselevel='final', serial=0)
 # 3.8.5 (default, Jul 28 2020, 12:59:40) 
