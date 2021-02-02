@@ -1,8 +1,8 @@
 # You want to operate on Unicode characters that have no specific encoding
 def to_str(bytes_or_str):
     if isinstance(bytes_or_str, bytes):
-        value = bytes_or_str.decode('utf-8') # decode: convert raw 8-bit values 
-                                             # -> str
+        value = bytes_or_str.decode('utf-8') # decode str back from raw 8-bit
+                                             # values 
     else:
         value = bytes_or_str
     return value # Instance of str
@@ -11,8 +11,8 @@ def to_str(bytes_or_str):
 # some other encoding)
 def to_bytes(bytes_or_str):
     if isinstance(bytes_or_str, str):
-        value = bytes_or_str.encode('utf-8') # encode: convert unicode str 
-                                             # -> raw 8-bit values
+        value = bytes_or_str.encode('utf-8') # encode unicode str into raw
+                                             # 8-bit values
     else:
         value = bytes_or_str
     return value # Instance of bytes
