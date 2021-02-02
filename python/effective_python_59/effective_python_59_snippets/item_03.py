@@ -23,6 +23,9 @@ def to_bytes(bytes_or_str):
 # containing binary data
 with open('random.bin', 'w') as f:
     f.write(os.urandom(10))
+>>>
+TypeError: must be str, not bytes
+
 # The fix is to use 'wb' in open to indicate write binary data
 with open('random.bin', 'wb') as f:
     f.write(os.urandom(10))
