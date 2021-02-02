@@ -12,4 +12,4 @@ else:
     else:
         retirement_year = dt.now().year + year_till_retirement
         print('You have ' + str(year_till_retirement) + ' years left until you can retire.')
-        print("It's " + str(dt.now().year) + ", so you can retire in " + str(retirement_year) + "...")
+        print("It's " + str(dt.now().year) + ", so you can retire in " + str(retirement_year) + ".")
