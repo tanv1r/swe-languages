@@ -3,11 +3,15 @@
 
 import sys
 
+print("Printing version info:")
 print(sys.version_info)
+print("Printing version:")
 print(sys.version)
 
 # Output from my vscode on ubuntu
 #
-# sys.version_info(major=3, minor=8, micro=5, releaselevel='final', serial=0)
-# 3.8.5 (default, Jul 28 2020, 12:59:40) 
-# [GCC 9.3.0]
+#Printing version info:
+#sys.version_info(major=3, minor=8, micro=5, releaselevel='final', serial=0)
+#Printing version:
+#3.8.5 (default, Jul 28 2020, 12:59:40) 
+#[GCC 9.3.0]
